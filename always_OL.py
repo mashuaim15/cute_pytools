@@ -4,6 +4,11 @@ import pyautogui
 # pyautogui.dragTo(100, 150)
 # pyautogui.dragRel(0, 10)              # drag mouse 10 pixels down
 # pyautogui.moveRel(0, 50)              # move mouse 10 pixels down
+
+import os
+
+os.environ['DISPLAY'] = ':0'
+
 def move_mouse():
     pyautogui.moveTo(1600, 150)
     position_v = 150
